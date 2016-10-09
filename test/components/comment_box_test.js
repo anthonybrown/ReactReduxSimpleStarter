@@ -2,7 +2,6 @@ import { renderComponent, expect } from '../test_helper'
 import CommentBox from '../../src/components/comment_box'
 
 describe('CommentBox', () => {
-
   let component
 
   beforeEach(() => {
@@ -20,5 +19,4 @@ describe('CommentBox', () => {
   it('has a button', () => {
     expect(component.find('button')).to.exist
   })
-
 })
