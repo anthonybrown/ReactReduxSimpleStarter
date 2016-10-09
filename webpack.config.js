@@ -3,14 +3,14 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: __dirname,
-    publicPath: '/',
-    filename: 'bundle.js'
+    path       : __dirname,
+    publicPath : '/',
+    filename   : 'bundle.js'
   },
   module: {
     loaders: [{
-      exclude: /node_modules/,
-      loader: 'babel',
+      exclude : /node_modules/,
+      loader  : 'babel',
       query: {
         presets: ['react', 'es2015', 'stage-1']
       }
@@ -20,7 +20,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
-    historyApiFallback: true,
-    contentBase: './'
+    historyApiFallback : true,
+    contentBase        : './'
   }
 };
